@@ -4,43 +4,43 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Define your variables
-beers=['High carbon steel', 'Low carbon steel', 'Cast iron', 'Aluminium alloys', 'Stainless steel','carbon fibre composite','Nickle alloy','Copper alloys']
-ibu_values=[7.5,7.6,7.2,2.54,7.8,1.4,8.42,8.64]
-abv_values=[9.27, 0,0,51,18.1,0,39,18.3]
+elements=['High carbon steel', 'Low carbon steel', 'Cast iron', 'Aluminium alloys', 'Stainless steel','carbon fibre composite','Nickle alloy','Copper alloys']
+density=[7.5,7.6,7.2,2.54,7.8,1.4,8.42,8.64]
+p_size=[9.27, 0,0,51,18.1,0,39,18.3]
 tabtitle='Mech Project'
 myheading='Mech Project'
-label1='IBU'
-label2='ABV'
+label1='Density'
+label2='Particle Size'
 
 ########### Set up the chart
-bitterness = go.Bar(
-    x=beers,
-    y=ibu_values,
+density1 = go.Bar(
+    x=elements,
+    y=density,
     name=label1,
     marker={'color':'red'}
 )
-beer_data = [bitterness]
-beer_layout = go.Layout(
+g_data = [density1]
+g_layout = go.Layout(
     barmode='group',
     title = 'Density'
 )
 
-beer_fig = go.Figure(data=beer_data, layout=beer_layout)
+g_fig = go.Figure(data=g_data, layout=g_layout)
 
-alcohol = go.Bar(
-    x=beers,
-    y=abv_values,
+p_size1 = go.Bar(
+    x=elements,
+    y=p_size,
     name=label2,
     marker={'color':'darkgreen'}
 )
 
-beer_d = [alcohol]
-beer_layout2 = go.Layout(
+g_d = [p_size1]
+g_layout2 = go.Layout(
     barmode='group',
     title = 'Particle Size'
 )
 
-beer_fig2 = go.Figure(data=beer_d, layout=beer_layout2)
+g_fig2 = go.Figure(data=g_d, layout=g_layout2)
 
 
 
@@ -55,11 +55,11 @@ app.layout = html.Div(children=[
     html.H1(myheading),
     dcc.Graph(
         id='flyingdog',
-        figure=beer_fig
+        figure=g_fig
     ),
     dcc.Graph(
         id='flying',
-        figure=beer_fig2
+        figure=g_fig2
     ),
    
     ]
