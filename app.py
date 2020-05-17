@@ -10,12 +10,10 @@ abv_values=[9.27, 0,0,51,18.1,0,39,18.3]
 color1='red'
 color2='darkgreen'
 mytitle='Beer Comparison'
-tabtitle='beer!'
-myheading='Flying Dog Beers'
+tabtitle='Mech Project'
+myheading='Mech Project'
 label1='IBU'
 label2='ABV'
-githublink='https://github.com/austinlasseter/flying-dog-beers'
-sourceurl='https://www.flyingdog.com/beers/'
 
 ########### Set up the chart
 bitterness = go.Bar(
@@ -62,7 +60,6 @@ app.layout = html.Div(children=[
         id='flyingdog',
         figure=beer_fig
     ),
-    html.H1(myheading),
     dcc.Graph(
         id='flying',
         figure=beer_fig2
