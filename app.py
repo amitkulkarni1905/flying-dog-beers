@@ -45,7 +45,7 @@ beer_layout = go.Layout(
     title = 'Particle Size'
 )
 
-beer_fig = go.Figure(data=beer_d, layout=beer_layout)
+beer_fig2 = go.Figure(data=beer_d, layout=beer_layout)
 
 
 
@@ -61,6 +61,7 @@ app.layout = html.Div(children=[
     dcc.Graph(
         id='flyingdog',
         figure=beer_fig
+        figure2=beer_fig2
     ),
     #html.A('Code on Github', href=githublink),
     #html.Br(),
