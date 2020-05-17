@@ -4,9 +4,9 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Define your variables
-beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-ibu_values=[35, 60, 85, 75]
-abv_values=[5.4, 7.1, 9.2, 4.3]
+beers=['High carbon steel', 'Low carbon steel', 'Cast iron', 'Aluminium alloys', 'Stainless steel','carbon fibre composite','Nickle alloy','Copper alloys']
+ibu_values=[7.5,7.6,7.2,2.54,7.8,1.4,8.42,8.64]
+#abv_values=[5.4, 7.1, 9.2, 4.3]
 color1='red'
 color2='darkgreen'
 mytitle='Beer Comparison'
@@ -24,14 +24,14 @@ bitterness = go.Bar(
     name=label1,
     marker={'color':color1}
 )
-alcohol = go.Bar(
+"""alcohol = go.Bar(
     x=beers,
     y=abv_values,
     name=label2,
     marker={'color':color2}
-)
+)"""
 
-beer_data = [bitterness, alcohol]
+beer_data = [bitterness]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
@@ -53,9 +53,9 @@ app.layout = html.Div(children=[
         id='flyingdog',
         figure=beer_fig
     ),
-    html.A('Code on Github', href=githublink),
-    html.Br(),
-    html.A('Data Source', href=sourceurl),
+    #html.A('Code on Github', href=githublink),
+    #html.Br(),
+    #html.A('Data Source', href=sourceurl),
     ]
 )
 
