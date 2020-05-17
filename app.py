@@ -40,12 +40,12 @@ beer_layout = go.Layout(
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
 
 beer_d = [alcohol]
-beer_layout = go.Layout(
+beer_layout2 = go.Layout(
     barmode='group',
     title = 'Particle Size'
 )
 
-beer_fig2 = go.Figure(data=beer_d, layout=beer_layout)
+beer_fig2 = go.Figure(data=beer_d, layout=beer_layout2)
 
 
 
