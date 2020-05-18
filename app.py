@@ -47,18 +47,6 @@ g_layout2 = go.Layout(
 g_fig2 = go.Figure(data=g_d2, layout=g_layout2)
 
 """....................................................................................."""
-h_brinell = go.Bar(
-       x = elements,
-       y = h_brinell,
-       marker = {'color' : 'blueviolet'}
-)
-g_d3 = [h_brinell]
-g_layout3 = go.Layout(
-    barmode = 'group',
-    title = 'Hardness (Brinell)'
-)
-
-g_fig3 = go.Figure(data=g_d3,layout=g_layout3)
 
 """....................................................................................."""
 c_impact = go.Bar(
@@ -91,10 +79,7 @@ app.layout = html.Div(children=[
         id='f2',
         figure=g_fig2
     ),
-    dcc.Graph(
-        id = 'f3',
-        figure = g_fig3
-    )
+  
     dcc.Graph(
         id = 'f4',
         figure = g_fig4
