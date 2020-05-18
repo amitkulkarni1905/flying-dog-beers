@@ -47,7 +47,7 @@ g_layout2 = go.Layout(
 g_fig2 = go.Figure(data=g_d2, layout=g_layout2)
 
 """....................................................................................."""
-"""h_brinell = go.Bar(
+h_brinell = go.Bar(
        x = elements,
        y = h_brinell,
        marker = {'color' : 'blueviolet'}
@@ -58,21 +58,10 @@ g_layout3 = go.Layout(
     title = 'Hardness (Brinell)'
 )
 
-g_fig3 = go.Figure(data=g_d3,layout=g_layout3)"""
+g_fig3 = go.Figure(data=g_d3,layout=g_layout3)
 
 """....................................................................................."""
-h_rockb = go.Bar(
-    x = elements,
-    y = h_rockb,
-    marker = {'color' : 'indigo'}
-)
-g_d5 = [h_rockb]
-g_layout5 = go.Layout(
-    barmode = 'group',
-    title = 'h_rockb'
-)
 
-g_fig5 = go.Figure(data=g_d5,layout=g_layout5)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -91,15 +80,11 @@ app.layout = html.Div(children=[
         id='f2',
         figure=g_fig2
     ),
-    """dcc.Graph(
+    dcc.Graph(
         id = 'f3',
         figure = g_fig3
-    )"""
-    dcc.Graph(
-        id = 'f5',
-        figure = g_fig5
     )
-
+   
    
     ]
 )
