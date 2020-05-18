@@ -49,12 +49,12 @@ g_fig2 = go.Figure(data=g_d2, layout=g_layout2)
 h_brinell = go.Bar(
        x = elements,
        y = h_brinell,
-       marker = {'color' : 'cyan'}
+       marker = {'color' : 'blueviolet'}
 )
 g_d3 = [h_brinell]
 g_layout3 = go.Layout(
     barmode = 'group',
-    title = 'h_brinell'
+    title = 'Hardness (Brinell)'
 )
 
 g_fig3 = go.Figure(data=g_d3,layout=g_layout3)
