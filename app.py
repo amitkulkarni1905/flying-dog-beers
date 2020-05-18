@@ -62,6 +62,21 @@ g_layout4 = go.Layout(
 
 g_fig4 = go.Figure(data=g_d4,layout=g_layout4)
 
+h_brinell = go.Bar(
+       x = elements,
+       y = h_brinell,
+       marker = {'color' : 'blueviolet'}
+)
+g_d3 = [h_brinell]
+g_layout3 = go.Layout(
+    barmode = 'group',
+    title = 'Hardness (Brinell)'
+)
+
+g_fig3 = go.Figure(data=g_d3,layout=g_layout3)
+
+
+
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -83,6 +98,11 @@ app.layout = html.Div(children=[
     dcc.Graph(
         id = 'f4',
         figure = g_fig4
+    )
+    
+  dcc.Graph(
+        id = 'f3',
+        figure = g_fig3
     )
   
    
