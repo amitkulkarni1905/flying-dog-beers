@@ -62,7 +62,7 @@ g_layout3 = go.Layout(
 g_fig3 = go.Figure(data=g_d3, layout=g_layout3)
 
 """....................................................................................."""
-h_rockb = go.Bar(
+"""h_rockb = go.Bar(
     x=elements,
     y=h_rockb,
     name=label4,
@@ -74,7 +74,7 @@ g_layout4 = go.Layout(
     title = 'Hardness (Rockwell B)'
 )
 
-g_fig4 = go.Figure(data=g_d4, layout=g_layout4)
+g_fig4 = go.Figure(data=g_d4, layout=g_layout4)"""
 
 
 
@@ -99,10 +99,10 @@ app.layout = html.Div(children=[
         id='f3',
         figure=g_fig3
     ),
-    dcc.Graph(
+   """ dcc.Graph(
         id='f4',
         figure=g_fig4
-    ),
+    ),"""
     
    
     ]
