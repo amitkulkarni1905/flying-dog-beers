@@ -8,7 +8,7 @@ elements=['High carbon steel', 'Low carbon steel', 'Cast iron', 'Aluminium alloy
 density=[7.5,7.6,7.2,2.54,7.8,1.4,8.42,8.64]
 p_size=[9.27, 0,0,51,18.1,0,39,18.3]
 h_brinell = [260,247,217,97.1,251,63.3,282,146]
-v_hard = [282,266,235,116,294,1030,296,231]
+
 
 tabtitle='Mech Project'
 myheading='Mech Project'
@@ -61,18 +61,7 @@ g_layout3 = go.Layout(
 g_fig3 = go.Figure(data=g_d3,layout=g_layout3)
 
 """....................................................................................."""
-v_hard = go.Bar(
-    x = elements,
-    y = v_hard,
-    marker = {'color' : 'red'}
-)
-g_d4 = [v_hard]
-g_layout4 = go.Layout(
-    barmode = 'group',
-    title = 'v_hard'
-)
 
-g_fig4 = go.Figure(data = g_d4,layout=g_layout4)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -95,10 +84,7 @@ app.layout = html.Div(children=[
         id = 'f3',
         figure = g_fig3
     )
-    dcc.Graph(
-        id = 'f4',
-        figure = g_fig4
-    )
+    
 
    
     ]
