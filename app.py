@@ -88,7 +88,7 @@ p = go.Bar(
     name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
-beer_data = [bitterness, alcohol,i]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
@@ -117,10 +117,7 @@ app.layout = html.Div(children=[
         id='flyingdog',
         figure=beer_fig
     ),
-    """dcc.Graph(
-        id = 'f2',
-        figure1 = beer_fig1
-    )"""
+    
     ]
 )
 
