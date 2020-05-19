@@ -19,6 +19,7 @@ q_values = [79.9,79.7,47.6]
 r_values = [160,160,0]
 s_values = [29.2,29,29.4]
 t_values = [2260,0,575]
+u_values = [2160,0,943]
 
 
 color1='lightblue'
@@ -115,9 +116,15 @@ t = go.Bar(
     name = 'Flexture Yield strength',
     marker = {'color' : 'Chartreuse'}
 )
+u = go.Bar(
+    x = beers,
+    y = u_values,
+    name = 'Compressive yield strength',
+    marker = {'color' : 'tomato'}
+)
 
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t,u]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
