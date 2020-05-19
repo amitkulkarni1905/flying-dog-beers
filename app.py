@@ -124,7 +124,7 @@ u = go.Bar(
 )
 v = go.Bar(
     x = beers,
-    y = v_Values,
+    y = v_values,
     name = 'Machinability',
     marker = {'color' : 'lightcoral'}
 )
