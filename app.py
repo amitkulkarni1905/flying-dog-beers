@@ -88,7 +88,7 @@ p = go.Bar(
     name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
+beer_data = [bitterness, alcohol,i]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
@@ -96,6 +96,13 @@ beer_layout = go.Layout(
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
 
+beer_data1 = [j,k,l]
+beer_layout1 = go.Layout(
+    barmode = 'group',
+    title = mytitle
+)
+
+beer_fig1 = go.Figure(data = beer_data1, layout=beer_layout1)
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -110,9 +117,10 @@ app.layout = html.Div(children=[
         id='flyingdog',
         figure=beer_fig
     ),
-    html.A('Code on Github', href=githublink),
-    html.Br(),
-    html.A('Data Source', href=sourceurl),
+    dcc.Graph(
+        id = 'f2',
+        figure1 = beer_fig1
+    )
     ]
 )
 
