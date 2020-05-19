@@ -13,6 +13,9 @@ k_values = [46.4,31.7,17.9,45.2]
 l_values = [286,266,235,116]
 m_values = [1120,716,310,344]
 n_values = [896,519,124,278]
+o_values = [14.30,20.20,6.67,9.94]
+p_values = [200,202,118,77.4]
+
 color1='lightblue'
 color2='darkgreen'
 mytitle='Beer Comparison'
@@ -73,7 +76,19 @@ n  = go.Bar(
     name = 'N',
     marker = {'color':'deeppink'}
 )
-beer_data = [bitterness, alcohol,i,j,k,l,m,n]
+o = go.Bar(
+    x = beers,
+    y = o_values,
+    name = 'O',
+    marker = {'color' : 'maroon'}
+)
+p = go.Bar(
+    x = beers,
+    y = p_values,
+    name = 'P',
+    marker = {'color' : 'teal'}
+)
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
