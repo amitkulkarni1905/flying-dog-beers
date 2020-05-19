@@ -8,6 +8,7 @@ beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
 ibu_values=[35, 60, 85, 75]
 abv_values=[5.4, 7.1, 9.2, 4.3]
 i_values = [122,43,5,78,134]
+j_values = [10,20,30,40,50]
 color1='lightblue'
 color2='darkgreen'
 mytitle='Beer Comparison'
@@ -35,10 +36,17 @@ alcohol = go.Bar(
 i = go.Bar(
     x = beers,
     y=i_values,
+    name = 'I',
     marker={'color':'red'}
 )
+j = go.Bar(
+    x = beers,
+    y = j_values,
+    name = 'J',
+    marker={'color':'gold'}
+)
 
-beer_data = [bitterness, alcohol,i]
+beer_data = [bitterness, alcohol,i,j]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
