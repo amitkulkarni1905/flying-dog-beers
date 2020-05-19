@@ -12,17 +12,17 @@ j_values = [75.7,89.4,0,69.3,54,88.3,88.2,69.2]
 k_values = [46.4,31.7,17.9,45.2,86.4,0,38,34.7]
 l_values = [286,266,235,116,294,1030,296,231]
 m_values = [1120,716,310,344,941,1230,902,512]
-n_values = [896,519,124]
-o_values = [14.30,20.20,6.67]
-p_values = [200,202,118]
-q_values = [79.9,79.7,47.6]
-r_values = [160,160,0]
-s_values = [29.2,29,29.4]
-t_values = [2260,0,575]
-u_values = [2160,0,943]
-v_values = [53.05,61.30,48.80]
-w_values = [89,965,297]
-z_values = [34.1,54.9,0]
+n_values = [896,519,124,278,669,1.55,585,384]
+o_values = [14.30,20.20,6.67,9.94,26.50,94.60,33.80,22.60]
+p_values = [200,202,118,77.4,196,0,207,119]
+q_values = [79.9,79.7,47.6,19.9,77.6,3.11,77.5,44.9]
+r_values = [160,160,0,0,166,0,0,140]
+s_values = [29.2,29,29.4,32.7,28.9,29.3,31.6,31.7]
+t_values = [2260,0,575,260,0,999,689,525]
+u_values = [2160,0,943,95.7,0,725,0,529]
+v_values = [53.05,61.30,48.80,55.90,31.70,0.00,0.00,32.60]
+w_values = [89,965,297,0,115,10.4,131,33.7]
+z_values = [34.1,54.9,0,7.91,115,0,151,47.8]
 
 color1='lightblue'
 color2='darkgreen'
@@ -78,68 +78,68 @@ m  = go.Bar(
 )
 n  = go.Bar(
     x = beers,
-    y = n_values,
+    y = [n_values[0],n_values[1],n_values[2]],
     name = 'Tensile strength(Yield)%',
     marker = {'color':'deeppink'}
 )
 o = go.Bar(
     x = beers,
-    y = o_values,
+    y = [o_values[0],o_values[1],o_values[2]],
     name = 'Elongation at break',
     marker = {'color' : 'maroon'}
 )
 p = go.Bar(
     x = beers,
-    y = p_values,
+    y = [p_values[0],p_values[1],p_values[2]],
     name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
 q = go.Bar(
     x = beers,
-    y = q_values,
+    y = [q_values[0],q_values[1],q_values[2]],
     name = 'Shear Modulus',
     marker = {'color' : 'dodgerblue'}
 )
 r = go.Bar(
     x = beers,
-    y = r_values,
+    y = [r_values[0],r_values[1],r_values[2]],
     name = 'Bulk Modulus',
     marker = {'color' : 'green'}
 )
 s = go.Bar(
     x = beers,
-    y = s_values,
+    y = [s_values[0],s_values[1],s_values[2]],
     name = 'Poissons Ratio*100',
     marker = {'color' : 'limegreen'}
 )
 t = go.Bar(
     x = beers,
-    y = t_values,
+    y = [t_values[0],t_values[1],t_values[2]],
     name = 'Flexture Yield strength',
     marker = {'color' : 'Chartreuse'}
 )
 u = go.Bar(
     x = beers,
-    y = u_values,
+    y = [u_values[0],u_values[1],u_values[2]],
     name = 'Compressive yield strength',
     marker = {'color' : 'tomato'}
 )
 v = go.Bar(
     x = beers,
-    y = v_values,
+    y = [v_values[0],v_values[1],v_values[2]],
     name = 'Machinability',
     marker = {'color' : 'lightcoral'}
 )
 
 w = go.Bar(
     x = beers,
-    y = w_values,
+    y = [w_values[0],w_values[1],w_values[2]],
     name = 'Izod Impact*10',
     marker = {'color' : 'darkorange'}
 )
 z = go.Bar(
     x = beers,
-    y = z_values,
+    y = [z_values[0],z_values[1],z_values[2]],
     name = 'Charpy Impact',
     marker = {'color' : 'sienna'}
 ) 
