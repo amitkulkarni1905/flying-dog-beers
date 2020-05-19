@@ -172,8 +172,32 @@ i1 = go.Bar(
     name = 'Hardness (Brinell)',
     marker={'color':'red'}
 )
+j1 = go.Bar(
+    x = beers1,
+    y = [j_values[3],j_values[4],j_values[5]],
+    name = 'Hardness (Rockwell B)',
+    marker={'color':'gold'}
+)
+k1  = go.Bar(
+    x = beers1,
+    y = [k_values[3],k_values[4],k_values[5]],
+    name = 'Hardness(Rockwell C)',
+    marker = {'color':'indigo'}
+)
+l1  = go.Bar(
+    x = beers1,
+    y = [l_values[3],l_values[4],l_values[5]],
+    name = 'Vickers Hardness',
+    marker = {'color':'blueviolet'}
+)
+m1  = go.Bar(
+    x = beers1,
+    y = [m_values[3],m_values[4],m_values[5]],
+    name = 'Tensile Strength(Ultimate)',
+    marker = {'color':'dodgerblue'}
+)
 
-beer_data1 = [bitterness1, alcohol1,i1]
+beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1]
 beer_layout1 = go.Layout(
     barmode='group',
     title = mytitle
