@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
-ibu_values=[7.5,7.6,7.2]
+ibu_values=[75,76,72]
 abv_values=[9.27,0,0]
 i_values = [260,247,217]
 j_values = [75.7,89.4,0]
@@ -18,6 +18,7 @@ p_values = [200,202,118]
 q_values = [79.9,79.7,47.6]
 r_values = [160,160,0]
 s_values = [29.2,29,29.4]
+t_values = [2260,0,575]
 
 color1='lightblue'
 color2='darkgreen'
@@ -32,7 +33,7 @@ label2='ABV'
 bitterness = go.Bar(
     x=beers,
     y=ibu_values,
-    name='Density',
+    name='Density*10',
     marker={'color':color1}
 )
 alcohol = go.Bar(
@@ -107,8 +108,14 @@ s = go.Bar(
     name = 'Poissons Ratio*100',
     marker = {'color' : 'limegreen'}
 )
+t = go.Bar(
+    x = beers,
+    y = t_values,
+    name = 'Flexture Yield strength',
+    marker = {'lightsalmon'}
+)
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
