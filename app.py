@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
+beers1=['Aluminium alloys', 'Stainless steel', ' Carbon fibre composite']
 ibu_values=[75,76,72,254,78,14,842,864]
 abv_values=[9.27,0,0,51,18.1,0,9,18.3]
 i_values = [260,247,217,97.1,251,63.3,282,146]
@@ -152,7 +153,33 @@ beer_layout = go.Layout(
 )
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
+#######################################################################
+bitterness1 = go.Bar(
+    x=beers1,
+    y=[ibu_values[3],ibu_values[4],ibu_values[5]],
+    name='Density*10',
+    marker={'color':color1}
+)
+alcohol1 = go.Bar(
+    x=beers1,
+    y=[abv_values[3],abv_values[4],abv_values[5]],
+    name='Particle Size',
+    marker={'color':color2}
+)
+i1 = go.Bar(
+    x = beers1,
+    y=[i_values[0],i_values[1],i_values[2]],
+    name = 'Hardness (Brinell)',
+    marker={'color':'red'}
+)
 
+beer_data1 = [bitterness1, alcohol1,i1]
+beer_layout1 = go.Layout(
+    barmode='group',
+    title = mytitle
+)
+
+beer_fig1 = go.Figure(data=beer_data1, layout=beer_layout1)
 
 
 ########### Initiate the app
@@ -167,6 +194,10 @@ app.layout = html.Div(children=[
     dcc.Graph(
         id='flyingdog',
         figure=beer_fig
+    )
+    dcc.Graph(
+        id = 'f2',
+        figure=beer_fig1
     )
     
     ]
