@@ -18,7 +18,7 @@ p_values = [200,202,118]
 q_values = [79.9,79.7,47.6]
 r_values = [160,160,0]
 s_values = [29.2,29,29.4]
-t_values = [2260,0,575]
+
 
 color1='lightblue'
 color2='darkgreen'
@@ -108,14 +108,9 @@ s = go.Bar(
     name = 'Poissons Ratio*100',
     marker = {'color' : 'limegreen'}
 )
-t = go.Bar(
-    x = beers,
-    y = t_values,
-    name = 'Flexture Yield strength',
-    marker = {'lightsalmon'}
-)
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t]
+
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
