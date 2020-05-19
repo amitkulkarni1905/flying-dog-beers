@@ -5,11 +5,12 @@ import plotly.graph_objs as go
 
 ########### Define your variables
 beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-ibu_values=[35, 60, 85, 75]
-abv_values=[5.4, 7.1, 9.2, 4.3]
-i_values = [122,43,5,78,134]
-j_values = [10,20,30,40,50]
-k_values = [900,123,456,97,23]
+ibu_values=[35, 0, 85, 75]
+abv_values=[5.4, 7.1, 0, 4.3]
+i_values = [122,43,0,78,134]
+j_values = [10,0,30,40,50]
+k_values = [0,123,456,97,23]
+l_values = [260,247,217,97.1,251,63.3,282,146]
 color1='lightblue'
 color2='darkgreen'
 mytitle='Beer Comparison'
@@ -51,6 +52,12 @@ k  = go.Bar(
     y = k_values,
     name = 'K',
     marker = {'color':'indigo'}
+)
+l  = go.Bar(
+    x = beers,
+    y = l_values,
+    name = 'L',
+    marker = {'color':'blueviolet'}
 )
 beer_data = [bitterness, alcohol,i,j,k]
 beer_layout = go.Layout(
