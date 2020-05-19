@@ -15,6 +15,7 @@ m_values = [1120,716,310]
 n_values = [896,519,124]
 o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
+q_values = [79.9,79.7,47.6]
 
 color1='lightblue'
 color2='darkgreen'
@@ -88,8 +89,14 @@ p = go.Bar(
     name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
+q = go.Bar(
+    x = beers,
+    y = q_values,
+    name = 'Shear Modulus',
+    marker = {'color' : 'dodgerblue'}
+)
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
