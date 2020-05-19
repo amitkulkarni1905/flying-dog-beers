@@ -83,13 +83,13 @@ m  = go.Bar(
 n  = go.Bar(
     x = beers,
     y = [n_values[0],n_values[1],n_values[2]],
-    name = 'Tensile strength(Yield)%',
+    name = 'Tensile strength(Yield)',
     marker = {'color':'deeppink'}
 )
 o = go.Bar(
     x = beers,
     y = [o_values[0],o_values[1],o_values[2]],
-    name = 'Elongation at break',
+    name = 'Elongation at break in %',
     marker = {'color' : 'maroon'}
 )
 p = go.Bar(
@@ -131,7 +131,7 @@ u = go.Bar(
 v = go.Bar(
     x = beers,
     y = [v_values[0],v_values[1],v_values[2]],
-    name = 'Machinability',
+    name = 'Machinability in %',
     marker = {'color' : 'lightcoral'}
 )
 
@@ -202,13 +202,13 @@ m1  = go.Bar(
 n1  = go.Bar(
     x = beers1,
     y = [n_values[3],n_values[4],n_values[5]],
-    name = 'Tensile strength(Yield)%',
+    name = 'Tensile strength(Yield)',
     marker = {'color':'deeppink'}
 )
 o1 = go.Bar(
     x = beers1,
     y = [o_values[3],o_values[4],o_values[5]],
-    name = 'Elongation at break',
+    name = 'Elongation at break in %',
     marker = {'color' : 'maroon'}
 )
 p1 = go.Bar(
@@ -250,7 +250,7 @@ u1 = go.Bar(
 v1 = go.Bar(
     x = beers1,
     y = [v_values[3],v_values[4],v_values[5]],
-    name = 'Machinability',
+    name = 'Machinability in %',
     marker = {'color' : 'lightcoral'}
 )
 
@@ -321,13 +321,13 @@ m2  = go.Bar(
 n2  = go.Bar(
     x = beers2,
     y = [n_values[6],n_values[7]],
-    name = 'Tensile strength(Yield)%',
+    name = 'Tensile strength(Yield)',
     marker = {'color':'deeppink'}
 )
 o2 = go.Bar(
     x = beers2,
     y = [o_values[6],o_values[7]],
-    name = 'Elongation at break',
+    name = 'Elongation at break in %',
     marker = {'color' : 'maroon'}
 )
 p2 = go.Bar(
@@ -369,7 +369,7 @@ u2 = go.Bar(
 v2 = go.Bar(
     x = beers2,
     y = [v_values[6],v_values[7]],
-    name = 'Machinability',
+    name = 'Machinability in %',
     marker = {'color' : 'lightcoral'}
 )
 
