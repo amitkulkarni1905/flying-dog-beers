@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
-ibu_values=[75,76,72]
+ibu_values=[75,76,72,254,78,14,842,864]
 abv_values=[9.27,0,0]
 i_values = [260,247,217]
 j_values = [75.7,89.4,0]
@@ -36,7 +36,7 @@ label2='ABV'
 ########### Set up the chart
 bitterness = go.Bar(
     x=beers,
-    y=ibu_values,
+    y=[ibu_values[0],ibu_values[1],ibu_values[2]]   
     name='Density*10',
     marker={'color':color1}
 )
