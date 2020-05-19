@@ -6,12 +6,12 @@ import plotly.graph_objs as go
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
 ibu_values=[75,76,72,254,78,14,842,864]
-abv_values=[9.27,0,0]
-i_values = [260,247,217]
-j_values = [75.7,89.4,0]
-k_values = [46.4,31.7,17.9]
-l_values = [286,266,235]
-m_values = [1120,716,310]
+abv_values=[9.27,0,0,51	18.1,0,9,18.3]
+i_values = [260,247,217,97.1,251,63.3,282,146]
+j_values = [75.7,89.4,0,69.3,54,88.3,88.2,69.2]
+k_values = [46.4,31.7,17.9,45.2,86.4,0,38,34.7]
+l_values = [286,266,235,116,294,1030,296,231]
+m_values = [1120,716,310,344,941,1230,902,512]
 n_values = [896,519,124]
 o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
@@ -42,37 +42,37 @@ bitterness = go.Bar(
 )
 alcohol = go.Bar(
     x=beers,
-    y=abv_values,
+    y=[abv_values[0],abv_values[1],abv_values[2]],
     name='Particle Size',
     marker={'color':color2}
 )
 i = go.Bar(
     x = beers,
-    y=i_values,
+    y=[i_values[0],i_values[1],i_values[2]],
     name = 'Hardness (Brinell)',
     marker={'color':'red'}
 )
 j = go.Bar(
     x = beers,
-    y = j_values,
+    y = [j_values[0],j_values[1],j_values[2]],
     name = 'Hardness (Rockwell B)',
     marker={'color':'gold'}
 )
 k  = go.Bar(
     x = beers,
-    y = k_values,
+    y = [k_values[0],k_values[1],k_values[2]],
     name = 'Hardness(Rockwell C)',
     marker = {'color':'indigo'}
 )
 l  = go.Bar(
     x = beers,
-    y = l_values,
+    y = [l_values[0],l_values[1],l_values[2]],
     name = 'Vickers Hardness',
     marker = {'color':'blueviolet'}
 )
 m  = go.Bar(
     x = beers,
-    y = m_values,
+    y = [m_values[0],m_values[1],m_values[2]],
     name = 'Tensile Strength(Ultimate)',
     marker = {'color':'dodgerblue'}
 )
