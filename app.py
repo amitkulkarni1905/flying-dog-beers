@@ -114,7 +114,7 @@ t = go.Bar(
     name = 'Poissons Ratio',
     marker = {'color' : 'firebrick'}
 )
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,t]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
