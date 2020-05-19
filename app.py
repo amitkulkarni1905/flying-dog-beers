@@ -17,7 +17,7 @@ o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
 q_values = [79.9,79.7,47.6]
 r_values = [160,160,0]
-s_values = [0.292,0.29,0.294]
+s_values = [29.2,29,29.4]
 
 color1='lightblue'
 color2='darkgreen'
@@ -104,7 +104,7 @@ r = go.Bar(
 s = go.Bar(
     x = beers,
     y = s_values,
-    name = 'Poissons Ratio',
+    name = 'Poissons Ratio*100',
     marker = {'color' : 'limegreen'}
 )
 
