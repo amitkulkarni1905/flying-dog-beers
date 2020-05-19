@@ -36,7 +36,7 @@ label2='ABV'
 ########### Set up the chart
 bitterness = go.Bar(
     x=beers,
-    y=[ibu_values[0],ibu_values[1],ibu_values[2]]   
+    y=[ibu_values[0],ibu_values[1],ibu_values[2]],
     name='Density*10',
     marker={'color':color1}
 )
