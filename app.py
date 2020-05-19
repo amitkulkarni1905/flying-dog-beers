@@ -220,8 +220,52 @@ q1 = go.Bar(
     name = 'Shear Modulus',
     marker = {'color' : 'dodgerblue'}
 )
+r1 = go.Bar(
+    x = beers1,
+    y = [r_values[3],r_values[4],r_values[5]],
+    name = 'Bulk Modulus',
+    marker = {'color' : 'green'}
+)
+s1 = go.Bar(
+    x = beers1,
+    y = [s_values[3],s_values[4],s_values[5]],
+    name = 'Poissons Ratio*100',
+    marker = {'color' : 'limegreen'}
+)
+t1 = go.Bar(
+    x = beers1,
+    y = [t_values[3],t_values[4],t_values[5]],
+    name = 'Flexture Yield strength',
+    marker = {'color' : 'Chartreuse'}
+)
+u1 = go.Bar(
+    x = beers1,
+    y = [u_values[3],u_values[4],u_values[5]],
+    name = 'Compressive yield strength',
+    marker = {'color' : 'tomato'}
+)
+v1 = go.Bar(
+    x = beers1,
+    y = [v_values[3],v_values[4],v_values[5]],
+    name = 'Machinability',
+    marker = {'color' : 'lightcoral'}
+)
 
-beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1,n1,o1,p1,q1]
+w1 = go.Bar(
+    x = beers1,
+    y = [w_values[3],w_values[4],w_values[5]],
+    name = 'Izod Impact*10',
+    marker = {'color' : 'darkorange'}
+)
+z1 = go.Bar(
+    x = beers1,
+    y = [z_values[3],z_values[4],z_values[5]],
+    name = 'Charpy Impact',
+    marker = {'color' : 'sienna'}
+) 
+
+
+beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1,n1,o1,p1,q1,r1,s1,t1,u1,v1,w1,z1]
 beer_layout1 = go.Layout(
     barmode='group',
     title = mytitle
