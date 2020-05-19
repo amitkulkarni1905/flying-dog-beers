@@ -28,7 +28,7 @@ z_values = [34.1,54.9,0,7.91,115,0,151,47.8]
 
 color1='lightblue'
 color2='darkgreen'
-mytitle='Beer Comparison'
+
 tabtitle='beer!'
 myheading='Flying Dog Beers'
 label1='IBU'
@@ -150,7 +150,7 @@ z = go.Bar(
 beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,z]
 beer_layout = go.Layout(
     barmode='group',
-    title = mytitle
+    title = 'Elements : High carbon steel,Low carbon steel, Cast iron'
 )
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
