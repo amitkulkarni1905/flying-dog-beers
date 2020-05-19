@@ -15,6 +15,14 @@ m_values = [1120,716,310]
 n_values = [896,519,124]
 o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
+q_values = [79.9,79.7,47.6]
+r_values = [160,160,0]
+t-values = [0.292,0.29,0.294]
+u_values = [2260,0,575]
+v_values = [2160,0,943]
+w_values = [53.05,61.30,48.80]
+x_values = [8.9,96.5,29.7]
+y_values = [34.1,54.9,0]
 
 color1='lightblue'
 color2='darkgreen'
@@ -88,7 +96,25 @@ p = go.Bar(
     name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
+q = go.Bar(
+    x = beers,
+    y = q_values,
+    name = 'Shear Modulus',
+    marker = {'color' : 'crimson'}
+)
+r = go.Bar(
+    x = beers,
+    y = r_values,
+    name = 'Bulk Modulus',
+    marker = {'color' : 'darkmagenta'}
+)
+t = go.Bar(
+    x = beers,
+    y = t_values,
+    name = 'Poissons Ratio',
+    marker = {'color' : 'firebrick'}
+)
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,t]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
@@ -96,13 +122,7 @@ beer_layout = go.Layout(
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
 
-"""beer_data1 = [j,k,l]
-beer_layout1 = go.Layout(
-    barmode = 'group',
-    title = mytitle
-)
 
-beer_fig1 = go.Figure(data = beer_data1, layout=beer_layout1)"""
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
