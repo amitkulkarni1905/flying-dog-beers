@@ -22,6 +22,7 @@ t_values = [2260,0,575]
 u_values = [2160,0,943]
 v_values = [53.05,61.30,48.80]
 w_values = [89,965,297]
+z_values = [34.1,54.9,0]
 
 color1='lightblue'
 color2='darkgreen'
@@ -136,9 +137,15 @@ w = go.Bar(
     name = 'Izod Impact*10',
     marker = {'color' : 'darkorange'}
 )
+z = go.Bar(
+    x = beers,
+    y = z_values,
+    name = 'Charpy Impact',
+    marker = {'color' : 'sienna'}
+) 
 
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,z]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
