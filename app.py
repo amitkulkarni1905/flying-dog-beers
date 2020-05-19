@@ -6,6 +6,7 @@ import plotly.graph_objs as go
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
 beers1=['Aluminium alloys', 'Stainless steel', ' Carbon fibre composite']
+beers2 = ['Nickle alloy','Copper alloys']
 ibu_values=[75,76,72,254,78,14,842,864]
 abv_values=[9.27,0,0,51,18.1,0,9,18.3]
 i_values = [260,247,217,97.1,251,63.3,282,146]
@@ -272,6 +273,39 @@ beer_layout1 = go.Layout(
 )
 
 beer_fig1 = go.Figure(data=beer_data1, layout=beer_layout1)
+###########################################################################################
+bitterness2 = go.Bar(
+    x=beers2,
+    y=[ibu_values[6],ibu_values[7],ibu_values[8]],
+    name='Density*10',
+    marker={'color':color1}
+)
+alcohol2 = go.Bar(
+    x=beers2,
+    y=[abv_values[6],abv_values[7],abv_values[8]],
+    name='Particle Size',
+    marker={'color':color2}
+)
+i2 = go.Bar(
+    x = beers2,
+    y=[i_values[6],i_values[7],i_values[8]],
+    name = 'Hardness (Brinell)',
+    marker={'color':'red'}
+)
+j2 = go.Bar(
+    x = beers2,
+    y = [j_values[6],j_values[7],j_values[8]],
+    name = 'Hardness (Rockwell B)',
+    marker={'color':'gold'}
+)
+
+beer_data2 = [bitterness2, alcohol2,i2,j2]
+beer_layout2 = go.Layout(
+    barmode='group',
+    title = mytitle
+)
+
+beer_fig2 = go.Figure(data=beer_data2, layout=beer_layout2)
 
 
 ########### Initiate the app
@@ -290,6 +324,10 @@ app.layout = html.Div(children=[
     dcc.Graph(
         id = 'f2',
         figure=beer_fig1
+    ),
+    dcc.Graph(
+        id = 'f3',
+        figure = beer_fig2
     )
     
     ]
