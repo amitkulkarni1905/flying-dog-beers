@@ -31,61 +31,61 @@ sourceurl='https://www.flyingdog.com/beers/'
 bitterness = go.Bar(
     x=beers,
     y=ibu_values,
-    name=label1,
+    name='Density',
     marker={'color':color1}
 )
 alcohol = go.Bar(
     x=beers,
     y=abv_values,
-    name=label2,
+    name='Particle Size',
     marker={'color':color2}
 )
 i = go.Bar(
     x = beers,
     y=i_values,
-    name = 'I',
+    name = 'Hardness (Brinell)',
     marker={'color':'red'}
 )
 j = go.Bar(
     x = beers,
     y = j_values,
-    name = 'J',
+    name = 'Hardness (Rockwell B)',
     marker={'color':'gold'}
 )
 k  = go.Bar(
     x = beers,
     y = k_values,
-    name = 'K',
+    name = 'Hardness(Rockwell C)',
     marker = {'color':'indigo'}
 )
 l  = go.Bar(
     x = beers,
     y = l_values,
-    name = 'L',
+    name = 'Vickers Hardness',
     marker = {'color':'blueviolet'}
 )
 m  = go.Bar(
     x = beers,
     y = m_values,
-    name = 'M',
+    name = 'Tensile Strength(Ultimate)',
     marker = {'color':'dodgerblue'}
 )
 n  = go.Bar(
     x = beers,
     y = n_values,
-    name = 'N',
+    name = 'Tensile strength(Yield)%',
     marker = {'color':'deeppink'}
 )
 o = go.Bar(
     x = beers,
     y = o_values,
-    name = 'O',
+    name = 'Elongation at break',
     marker = {'color' : 'maroon'}
 )
 p = go.Bar(
     x = beers,
     y = p_values,
-    name = 'P',
+    name = 'Modulus of elastisity',
     marker = {'color' : 'teal'}
 )
 beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p]
