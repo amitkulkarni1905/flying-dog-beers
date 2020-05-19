@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 ########### Define your variables
 beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
 ibu_values=[75,76,72,254,78,14,842,864]
-abv_values=[9.27,0,0,51	18.1,0,9,18.3]
+abv_values=[9.27,0,0,51,18.1,0,9,18.3]
 i_values = [260,247,217,97.1,251,63.3,282,146]
 j_values = [75.7,89.4,0,69.3,54,88.3,88.2,69.2]
 k_values = [46.4,31.7,17.9,45.2,86.4,0,38,34.7]
