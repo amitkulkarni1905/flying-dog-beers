@@ -4,15 +4,15 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Define your variables
-beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-ibu_values=[35, 65, 85, 75]
-abv_values=[5.4, 7.1, 9.9, 4.3]
-i_values = [122,43,54,78,134]
-j_values = [10,20,30,40,50]
-k_values = [65,123,456,97,23]
-l_values = [260,247,217,97.1,251]
-m_values = [79.9,79.7,47.6,19.9,77.6]
-n_values = [0.292,0.29,0.294,0.327,0.289]
+beers=['High carbon steel', 'Low carbon steel', ' Cast iron', 'Aluminium alloys']
+ibu_values=[7.5,7.6,7.2,2.54]
+abv_values=[9.27,0,0,51]
+i_values = [260,247,217,97.1]
+j_values = [75.7,89.4,0,69.3]
+k_values = [46.4,31.7,17.9,45.2]
+l_values = [286,266,235,116]
+m_values = [1120,716,310,344]
+n_values = [896,519,124,278]
 color1='lightblue'
 color2='darkgreen'
 mytitle='Beer Comparison'
