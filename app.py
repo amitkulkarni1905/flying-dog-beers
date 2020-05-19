@@ -276,25 +276,25 @@ beer_fig1 = go.Figure(data=beer_data1, layout=beer_layout1)
 ###########################################################################################
 bitterness2 = go.Bar(
     x=beers2,
-    y=[ibu_values[6],ibu_values[7],ibu_values[8]],
+    y=[ibu_values[6],ibu_values[7]],
     name='Density*10',
     marker={'color':color1}
 )
 alcohol2 = go.Bar(
     x=beers2,
-    y=[abv_values[6],abv_values[7],abv_values[8]],
+    y=[abv_values[6],abv_values[7]],
     name='Particle Size',
     marker={'color':color2}
 )
 i2 = go.Bar(
     x = beers2,
-    y=[i_values[6],i_values[7],i_values[8]],
+    y=[i_values[6],i_values[7]],
     name = 'Hardness (Brinell)',
     marker={'color':'red'}
 )
 j2 = go.Bar(
     x = beers2,
-    y = [j_values[6],j_values[7],j_values[8]],
+    y = [j_values[6],j_values[7]],
     name = 'Hardness (Rockwell B)',
     marker={'color':'gold'}
 )
