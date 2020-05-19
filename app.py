@@ -16,6 +16,7 @@ n_values = [896,519,124]
 o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
 q_values = [79.9,79.7,47.6]
+r_values = [160,160,0]
 
 color1='lightblue'
 color2='darkgreen'
@@ -24,9 +25,7 @@ tabtitle='beer!'
 myheading='Flying Dog Beers'
 label1='IBU'
 label2='ABV'
-label3 = 'I'
-githublink='https://github.com/austinlasseter/flying-dog-beers'
-sourceurl='https://www.flyingdog.com/beers/'
+
 
 ########### Set up the chart
 bitterness = go.Bar(
@@ -95,8 +94,14 @@ q = go.Bar(
     name = 'Shear Modulus',
     marker = {'color' : 'dodgerblue'}
 )
+r = go.Bar(
+    x = beers,
+    y = r_values,
+    name = 'Bulk Modulus',
+    marker = {'color' : 'green'}
+)
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
