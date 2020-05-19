@@ -26,6 +26,7 @@ v_values = [53.05,61.30,48.80,55.90,31.70,0.00,0.00,32.60]
 w_values = [89,965,297,0,115,10.4,131,33.7]
 z_values = [34.1,54.9,0,7.91,115,0,151,47.8]
 mytitle='Elements : High carbon steel,Low carbon steel, Cast iron'
+mytitle1 = 'Aluminium alloys,Stainless steel,Carbon fibre composite'
 color1='lightblue'
 color2='darkgreen'
 
@@ -269,7 +270,7 @@ z1 = go.Bar(
 beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1,n1,o1,p1,q1,r1,s1,t1,u1,v1,w1,z1]
 beer_layout1 = go.Layout(
     barmode='group',
-    title = mytitle
+    title = mytitle1
 )
 
 beer_fig1 = go.Figure(data=beer_data1, layout=beer_layout1)
