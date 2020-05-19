@@ -17,6 +17,7 @@ o_values = [14.30,20.20,6.67]
 p_values = [200,202,118]
 q_values = [79.9,79.7,47.6]
 r_values = [160,160,0]
+s_values = [0.292,0.29,0.294]
 
 color1='lightblue'
 color2='darkgreen'
@@ -100,8 +101,14 @@ r = go.Bar(
     name = 'Bulk Modulus',
     marker = {'color' : 'green'}
 )
+s = go.Bar(
+    x = beers,
+    y = s_values,
+    name = 'Poissons Ratio',
+    marker = {'color' : 'limegreen'}
+)
 
-beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r]
+beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s]
 beer_layout = go.Layout(
     barmode='group',
     title = mytitle
