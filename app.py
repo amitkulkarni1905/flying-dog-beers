@@ -4,17 +4,17 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Define your variables
-beers=['High carbon steel', 'Low carbon steel', ' Cast iron', 'Aluminium alloys']
-ibu_values=[7.5,7.6,7.2,2.54]
-abv_values=[9.27,0,0,51]
-i_values = [260,247,217,97.1]
-j_values = [75.7,89.4,0,69.3]
-k_values = [46.4,31.7,17.9,45.2]
-l_values = [286,266,235,116]
-m_values = [1120,716,310,344]
-n_values = [896,519,124,278]
-o_values = [14.30,20.20,6.67,9.94]
-p_values = [200,202,118,77.4]
+beers=['High carbon steel', 'Low carbon steel', ' Cast iron']
+ibu_values=[7.5,7.6,7.2]
+abv_values=[9.27,0,0]
+i_values = [260,247,217]
+j_values = [75.7,89.4,0]
+k_values = [46.4,31.7,17.9]
+l_values = [286,266,235]
+m_values = [1120,716,310]
+n_values = [896,519,124]
+o_values = [14.30,20.20,6.67]
+p_values = [200,202,118]
 
 color1='lightblue'
 color2='darkgreen'
