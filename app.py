@@ -196,8 +196,32 @@ m1  = go.Bar(
     name = 'Tensile Strength(Ultimate)',
     marker = {'color':'dodgerblue'}
 )
+n1  = go.Bar(
+    x = beers1,
+    y = [n_values[3],n_values[4],n_values[5]],
+    name = 'Tensile strength(Yield)%',
+    marker = {'color':'deeppink'}
+)
+o1 = go.Bar(
+    x = beers1,
+    y = [o_values[3],o_values[4],o_values[5]],
+    name = 'Elongation at break',
+    marker = {'color' : 'maroon'}
+)
+p1 = go.Bar(
+    x = beers1,
+    y = [p_values[3],p_values[4],p_values[5]],
+    name = 'Modulus of elastisity',
+    marker = {'color' : 'teal'}
+)
+q1 = go.Bar(
+    x = beers1,
+    y = [q_values[3],q_values[4],q_values[5]],
+    name = 'Shear Modulus',
+    marker = {'color' : 'dodgerblue'}
+)
 
-beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1]
+beer_data1 = [bitterness1, alcohol1,i1,j1,k1,l1,m1,n1,o1,p1,q1]
 beer_layout1 = go.Layout(
     barmode='group',
     title = mytitle
