@@ -358,8 +358,33 @@ t2 = go.Bar(
     name = 'Flexture Yield strength',
     marker = {'color' : 'Chartreuse'}
 )
+u2 = go.Bar(
+    x = beers2,
+    y = [u_values[6],u_values[7]],
+    name = 'Compressive yield strength',
+    marker = {'color' : 'tomato'}
+)
+v2 = go.Bar(
+    x = beers2,
+    y = [v_values[6],v_values[7]],
+    name = 'Machinability',
+    marker = {'color' : 'lightcoral'}
+)
 
-beer_data2 = [bitterness2, alcohol2,i2,j2,k2,l2,m2,n2,o2,p2,q2,r2,s2,t2]
+w2 = go.Bar(
+    x = beers2,
+    y = [w_values[6],w_values[7]],
+    name = 'Izod Impact*10',
+    marker = {'color' : 'darkorange'}
+)
+z2 = go.Bar(
+    x = beers2,
+    y = [z_values[6],z_values[7]],
+    name = 'Charpy Impact',
+    marker = {'color' : 'sienna'}
+)
+
+beer_data2 = [bitterness2, alcohol2,i2,j2,k2,l2,m2,n2,o2,p2,q2,r2,s2,t2,u2,v2,w2,z2]
 beer_layout2 = go.Layout(
     barmode='group',
     title = mytitle
