@@ -31,8 +31,8 @@ mytitle2 = 'Elements : Nickle alloy, Copper alloys'
 color1='lightblue'
 color2='darkgreen'
 
-tabtitle='beer!'
-myheading='Flying Dog Beers'
+tabtitle='Mech Project'
+myheading='Elements Comparison'
 label1='IBU'
 label2='ABV'
 
