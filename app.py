@@ -168,7 +168,7 @@ alcohol1 = go.Bar(
 )
 i1 = go.Bar(
     x = beers1,
-    y=[i_values[0],i_values[1],i_values[2]],
+    y=[i_values[3],i_values[4],i_values[5]],
     name = 'Hardness (Brinell)',
     marker={'color':'red'}
 )
@@ -194,7 +194,7 @@ app.layout = html.Div(children=[
     dcc.Graph(
         id='flyingdog',
         figure=beer_fig
-    )
+    ),
     dcc.Graph(
         id = 'f2',
         figure=beer_fig1
