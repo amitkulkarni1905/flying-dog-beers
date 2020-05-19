@@ -150,7 +150,7 @@ z = go.Bar(
 beer_data = [bitterness, alcohol,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,z]
 beer_layout = go.Layout(
     barmode='group',
-    title = 'Elements : High carbon steel,Low carbon steel, Cast iron'
+    title = mytitle
 )
 
 beer_fig = go.Figure(data=beer_data, layout=beer_layout)
